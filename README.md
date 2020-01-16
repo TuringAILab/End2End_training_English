@@ -10,7 +10,7 @@ GPU：1080Ti， 12G
 
 二、数据准备
 
-原始数据：LJ-speech的音频和文本。
+原始数据：LJ-speech的音频和文本。下载地址：https://keithito.com/LJ-Speech-Dataset/
 
 数据处理：1）音频：将原始音频提取为需要的特征，作为模型输出
 
