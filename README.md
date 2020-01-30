@@ -13,7 +13,7 @@ Data preparation
 
 Raw data: audio and text from LJ-speech. Download address: https://keithito.com/LJ-Speech-Dataset/
 
-2. Data processing: 1) Audio: Extract the original audio into the required features as the model output
+2.Data processing: 1) Audio: Extract the original audio into the required features as the model output
                    2）Text：Extract the original audio into the required features as the model output       
 
 The specific data processing process refers to the code in data_process.
@@ -24,7 +24,7 @@ The function of select.py is to filter the audio so that the length and rate are
 
 The generated train_selected_emo_sent_data.json and train_selected_emo_sent_data.json; emo_sent_data_rate_info.npy is put into the train_1 and trian_2 folders for training.
 
-3. Model training
+3.Model training
 
 Model training is divided into two phases.
 
@@ -34,7 +34,7 @@ Phase two locked the alignment module, mainly training the acoustic module. The 
 
 The parameter aco_shape is the feature number dimension of the generated feature file, and aco_path is the address of the audio converted .pcm file
 
-4. audio generation
+4.audio generation
 
 The generated code corresponding to phase one and phase two is located under the paths of synth_1 and synth_2, respectively.
 
