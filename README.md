@@ -1,7 +1,7 @@
 # End2End_training_English
 This project is an end-to-end TTS (Speech Synthesis) system.
 
-1. System requirements
+1.System requirements
 
 python: 2.7
 
@@ -13,10 +13,8 @@ Data preparation
 
 Raw data: audio and text from LJ-speech. Download address: https://keithito.com/LJ-Speech-Dataset/
 
-2.Data processing: 1) Audio: Extract the original audio into the required features as the model output
-
-                 2) Text: Convert text to CMU phonetic symbols and other features.
-       
+2. Data processing: 1) Audio: Extract the original audio into the required features as the model output
+                   2）Text：Extract the original audio into the required features as the model output       
 
 The specific data processing process refers to the code in data_process.
 
@@ -26,7 +24,7 @@ The function of select.py is to filter the audio so that the length and rate are
 
 The generated train_selected_emo_sent_data.json and train_selected_emo_sent_data.json; emo_sent_data_rate_info.npy is put into the train_1 and trian_2 folders for training.
 
-3.Model training
+3. Model training
 
 Model training is divided into two phases.
 
