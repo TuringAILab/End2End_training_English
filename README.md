@@ -13,8 +13,9 @@ Data preparation
 
 Raw data: audio and text from LJ-speech. Download address: https://keithito.com/LJ-Speech-Dataset/
 
-2.Data processing: 1) Audio: Extract the original audio into the required features as the model output
-                   2）Text：Extract the original audio into the required features as the model output       
+2.Data processing: 
+1）Audio: Extract the original audio into the required features as the model output
+2）Text：Extract the original audio into the required features as the model output       
 
 The specific data processing process refers to the code in data_process.
 
