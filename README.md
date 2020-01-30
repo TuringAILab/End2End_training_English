@@ -1,45 +1,47 @@
 # End2End_training_English
-本工程是一个端到端的TTS（语音合成）系统。
+This project is an end-to-end TTS (Speech Synthesis) system.
 
-一、系统要求
+1. System requirements
 
-python： 2.7
+python: 2.7
 
-mxnet，numpy等函数库
+mxnet, numpy and other function libraries
 
-GPU：1080Ti， 12G
+GPU: 1080Ti, 12G
 
-二、数据准备
+Data preparation
 
-原始数据：LJ-speech的音频和文本。下载地址：https://keithito.com/LJ-Speech-Dataset/
+Raw data: audio and text from LJ-speech. Download address: https://keithito.com/LJ-Speech-Dataset/
 
-数据处理：1）音频：将原始音频提取为需要的特征，作为模型输出
+2.Data processing: 1) Audio: Extract the original audio into the required features as the model output
 
-          2）文本：将文本转换为CMU音标和其他特征。
+                 2) Text: Convert text to CMU phonetic symbols and other features.
        
 
-具体的数据处理过程参考data_process内的代码。
+The specific data processing process refers to the code in data_process.
 
-一共分为三个步骤，首先运行make_train_data.py,然后运行select.py,最后运行split.py。
+It is divided into three steps, first run make_train_data.py, then select.py, and finally split.py.
 
-select.py的作用是将筛选音频，使得长度以及速率都基本一致，split.py用来筛选出训练集以及验证集。
-生成的train_selected_emo_sent_data.json与train_selected_emo_sent_data.json；emo_sent_data_rate_info.npy放入train_1以及trian_2文件夹训练。
-三、模型训练
+The function of select.py is to filter the audio so that the length and rate are basically the same. split.py is used to filter out the training set and the validation set.
 
-模型训练分为两个阶段。
+The generated train_selected_emo_sent_data.json and train_selected_emo_sent_data.json; emo_sent_data_rate_info.npy is put into the train_1 and trian_2 folders for training.
 
-阶段一主要用于训练模型的alignment模块。训练代码在 train_1 路径下
+3.Model training
 
-阶段二锁定了alignment模块，主要训练acoustic模块。训练代码在 train_2 路径下
+Model training is divided into two phases.
 
-其中参数aco_shape是生成的特征文件的特征数维度，aco_path是音频转化的.pcm文件的地址
+Phase one is mainly used to train the alignment module of the model. The training code is under the train_1 path
 
-四、音频生成
+Phase two locked the alignment module, mainly training the acoustic module. The training code is under the train_2 path
 
-对应于阶段一和阶段二的生成代码，分别位于synth_1和synth_2的路径下。
+The parameter aco_shape is the feature number dimension of the generated feature file, and aco_path is the address of the audio converted .pcm file
 
-生成结果为模型的输出的音频特征。
+4. audio generation
 
-将特征输入wav_generation/的合成器部分， 生成最后的音频。
+The generated code corresponding to phase one and phase two is located under the paths of synth_1 and synth_2, respectively.
 
-论文地址：https://arxiv.org/abs/1812.05710
+The resulting audio features are the output of the model.
+
+Input features into the synthesizer section of wav_generation / to generate the final audio.
+
+Paper address: https://arxiv.org/abs/1812.05710
