@@ -24,7 +24,7 @@ It is divided into three steps, first run make_train_data.py, then select.py, an
 
 The function of select.py is to filter the audio so that the length and rate are basically the same. split.py is used to filter out the training set and the validation set.
 
-The generated train_selected_emo_sent_data.json and train_selected_emo_sent_data.json; emo_sent_data_rate_info.npy is put into the train_1 and trian_2 folders for training.
+The generated train_selected_emo_sent_data.json, train_selected_emo_sent_data.json and emo_sent_data_rate_info.npy are put into the train_1 and trian_2 folders for training.
 
 3.Model training
 
