@@ -31,9 +31,13 @@ The generated train_selected_emo_sent_data.json, train_selected_emo_sent_data.js
 Model training is divided into two phases.
 
 Phase one is mainly used to train the alignment module of the model. The training code is under the train_1 path
-
+```
+    python train.py
+```
 Phase two locked the alignment module, mainly training the acoustic module. The training code is under the train_2 path
-
+```
+    python train.py
+```
 The parameter aco_shape is the feature number dimension of the generated feature file, and aco_path is the address of the audio converted .pcm file
 
 ## 4.audio generation
