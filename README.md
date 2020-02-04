@@ -11,7 +11,7 @@ GPU: 1080Ti, 12G
 
 ### Data preparation
 
-Raw data: audio and text from LJ-speech. :[Download address](https://keithito.com/LJ-Speech-Dataset/)
+Raw data: audio and text from LJ-speech. [Download address](https://keithito.com/LJ-Speech-Dataset/)
 
 ## 2.Data processing
 
@@ -48,4 +48,4 @@ The resulting audio features are the output of the model.
 
 Input features into the synthesizer section of wav_generation / to generate the final audio.
 
-Paper address: https://arxiv.org/abs/1812.05710
+[Paper address](https://arxiv.org/abs/1812.05710)
