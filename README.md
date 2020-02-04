@@ -21,7 +21,15 @@ Raw data: audio and text from LJ-speech. [Download address](https://keithito.com
 The specific data processing process refers to the code in data_process.
 
 It is divided into three steps, first run make_train_data.py, then select.py, and finally split.py.
-
+```
+   python make_train_data.py
+```
+```
+   python select.py
+```
+```
+   python split.py
+```
 The function of select.py is to filter the audio so that the length and rate are basically the same. split.py is used to filter out the training set and the validation set.
 
 The generated train_selected_emo_sent_data.json, train_selected_emo_sent_data.json and emo_sent_data_rate_info.npy are put into the train_1 and trian_2 folders for training.
