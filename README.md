@@ -11,7 +11,7 @@ GPU: 1080Ti, 12G
 
 ### Data preparation
 
-Raw data: audio and text from LJ-speech. Download address: https://keithito.com/LJ-Speech-Dataset/
+Raw data: audio and text from LJ-speech. :[Download address](https://keithito.com/LJ-Speech-Dataset/)
 
 ## 2.Data processing
 
