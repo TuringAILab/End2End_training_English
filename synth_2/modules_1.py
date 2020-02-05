@@ -1,9 +1,13 @@
 import mxnet as mx
 from mxnet import gluon, nd
-from U_Net import U_Net
+#from U_Net import U_Net
 import numpy as np
 import matplotlib.pyplot as plt
-
+import sys
+import os
+o_path = os.getcwd() # 返回当前工作目录
+sys.path.append(o_path) # 添加自己指定的搜索路径
+from train_1 import U_Net
 
 class Attention (gluon.HybridBlock):
 
