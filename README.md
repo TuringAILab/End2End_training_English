@@ -7,7 +7,7 @@ python: 2.7
 
 mxnet, numpy and other function libraries
 
-GPU: 1080Ti, 12G
+GPU: 2×1080Ti, 12G
 
 ### Data preparation
 
