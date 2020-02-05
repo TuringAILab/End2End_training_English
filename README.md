@@ -32,7 +32,7 @@ It is divided into three steps, first run make_train_data.py, then select.py, an
 ```
 The function of select.py is to filter the audio so that the length and rate are basically the same. split.py is used to filter out the training set and the validation set.
 
-The generated train_selected_emo_sent_data.json, train_selected_emo_sent_data.json and emo_sent_data_rate_info.npy are put into the train_1 and trian_2 folders for training.
+The generated **train_selected_emo_sent_data.json**, **train_selected_emo_sent_data.json** and **emo_sent_data_rate_info.npy** are put into the train_1 and trian_2 folders for training.
 
 ## 3.Model training
 
@@ -46,7 +46,9 @@ Phase two locked the alignment module, mainly training the acoustic module. The 
 ```
     python train.py
 ```
-The parameter aco_shape is the feature number dimension of the generated feature file, and aco_path is the address of the audio converted .pcm file
+The parameter _aco_shape_ is the feature number dimension of the generated feature file, and _aco_path_ is the address of the audio converted .pcm file
+
+Also you have to change the .json file and npy file to the files you made in the data processing part.
 
 ## 4.audio generation
 
